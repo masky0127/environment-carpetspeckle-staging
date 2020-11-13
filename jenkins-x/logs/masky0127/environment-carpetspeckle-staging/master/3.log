@@ -1,0 +1,40 @@
+
+Showing logs for build [32mmasky0127-environment-carpetspe-wq78l-3[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1605248229.958844,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mmasky0127-environment-carpetspe-wq78l-3[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mmasky0127-environment-carpetspe-wq78l-3[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mmasky0127-environment-carpetspe-wq78l-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-masky0127-environment-carpetspe-wq78l-zrfc7[0m
+{"level":"info","ts":1605248236.972351,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*****0127/environment-carpetspeckle-staging.git @ v0.0.3 in path /workspace/source"}
+{"level":"warn","ts":1605248236.9724853,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1605248237.009456,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mmasky0127-environment-carpetspe-wq78l-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mmasky0127-environment-carpetspe-wq78l-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:a48c3a29bd2faa388c86a66d9e79e39290b4aac6
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmasky0127-environment-carpetspe-wq78l-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /tekton/home/git/credentials
+
+Showing logs for build [32mmasky0127-environment-carpetspe-wq78l-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Modified file /workspace/source/env/Chart.yaml to set the chart to version 3
+creating the lock configmap **-lock-**-staging
+lock configmap **-lock-**-staging created
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /tekton/home/.**/jenkins-x-versions
+Ignoring templates/.gitignore
+Ignoring templates/wildcardcert-secret.yaml
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+release.jenkins.io "jenkinsxquick-0.0.3" deleted
+cleaning the lock configmap **-lock-**-staging
