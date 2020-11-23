@@ -1,0 +1,40 @@
+
+Showing logs for build [32mmasky0127-environment-carpetspe-plzzt-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1606135846.6289153,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mmasky0127-environment-carpetspe-plzzt-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mmasky0127-environment-carpetspe-plzzt-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mmasky0127-environment-carpetspe-plzzt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-masky0127-environment-carpetspe-plzzt-prtjs[0m
+{"level":"info","ts":1606135854.8857613,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*****0127/environment-carpetspeckle-staging.git @ master in path /workspace/source"}
+{"level":"warn","ts":1606135854.8858266,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1606135854.9271407,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mmasky0127-environment-carpetspe-plzzt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mmasky0127-environment-carpetspe-plzzt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:db09b6599771c5c6abc8747cc99459d089be5b12,6:02c7f62830f2c53f23f6bc5d7dd8c85d77bc3e06
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 02c7f62830f2c53f23f6bc5d7dd8c85d77bc3e06: db09b6599771c5c6abc8747cc99459d089be5b12:
+DEBUG: ran git fetch --unshallow origin 02c7f62830f2c53f23f6bc5d7dd8c85d77bc3e06: db09b6599771c5c6abc8747cc99459d089be5b12: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard db09b6599771c5c6abc8747cc99459d089be5b12
+DEBUG: ran git reset --hard db09b6599771c5c6abc8747cc99459d089be5b12 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git merge 02c7f62830f2c53f23f6bc5d7dd8c85d77bc3e06
+DEBUG: ran git merge 02c7f62830f2c53f23f6bc5d7dd8c85d77bc3e06 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e db09b6599771c5c6abc8747cc99459d089be5b12..HEAD
+Merged SHA 02c7f62830f2c53f23f6bc5d7dd8c85d77bc3e06 with commit message 'chore: Promote jenkinsxquick to version 0.0.7' into base branch master
+
+Showing logs for build [32mmasky0127-environment-carpetspe-plzzt-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
